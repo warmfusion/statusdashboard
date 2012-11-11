@@ -73,7 +73,7 @@ var checkHttpStatusCode = function(response, service) {
   service.statusCode = response.statusCode;
 };
 
-var checkRange = function(min, max, value) {
+var healthCheckRange = function(min, max, value) {
   if (min && max && value >= min && value < max) {
     return true;
   } else if ( (min && value >= min) || (max && value < max) ) {
@@ -81,6 +81,25 @@ var checkRange = function(min, max, value) {
   }
   return false;
 };
+
+var checkHealthPageResponse = function(response, serviceDefinition, service){
+  if(response.statusCode === 200){
+    response.on('data', function(chunk){
+      summary = JSON.parse(chunk);
+      if(summary.overallHealth.health === "OK"){
+        service.status = 'up';	
+      }else {
+        service.status = 'down';
+        service.message = "Services up: "+ summary.subChecks.length; 
+      }
+      controller.emit(service.status, service);
+    });
+    controller.emit("Argh", service);
+  }else{
+    service.message = "Error: " + response.statusCode + " from server";
+  }
+};
+
 var checkStatusDashboardResponse = function(response, serviceDefinition, service) {
   if(response.statusCode === 200){
     response.on('data', function(chunk){
@@ -325,6 +344,24 @@ var commands = {
       service.message = '';
       checkHttpStatusCode(response, service);
       checkStatusDashboardResponse(response, serviceDefinition, service);
+    })
+    .on('error', function(e) {
+      service.status = "down";
+      service.statusCode = 0;
+      service.message = e.message;
+      controller.emit(service.status, service);
+    });
+  },
+  healthCheck : function(serviceDefinition, service) {
+    var options = {
+      host: serviceDefinition.host,
+      port: serviceDefinition.port,
+      path: serviceDefinition.path      
+    };
+    http.get(options, function(response) {
+      service.message = '';
+      checkHttpStatusCode(response, service);
+      checkHealthPageResponse(response, serviceDefinition, service);
     })
     .on('error', function(e) {
       service.status = "down";

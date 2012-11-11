@@ -22,6 +22,65 @@ exports.create = function() {
     serviceDelay: 500
   };
 
+  settings['healthCheck'] = {
+    port: 8080,
+    hostname: '0.0.0.0',
+    services: [{
+      name: 'tm', 
+      label: 'TransactionProcessor',
+      check: 'healthCheck',
+      host: '192.168.6.85', 
+      port: '8430',
+      path: '/processor/healthCheck?json'
+    },{
+      name: 'cm', 
+      label: 'Config Manager',
+      check: 'healthCheck',
+      host: '192.168.6.84', 
+      port: '8330',
+      path: '/cm/healthCheck?json'
+    },{
+      name: 'ta', 
+      label: 'Acceptor',
+      check: 'healthCheck',
+      host: '192.168.6.83', 
+      port: '8530',
+      path: '/acceptor/healthCheck?json'
+    },{
+      name: 'rs', 
+      label: 'Reporting Server',
+      check: 'healthCheck',
+      host: '192.168.6.86', 
+      port: '8630',
+      path: '/rs/healthCheck?json'
+    },{
+      name: 'portal', 
+      label: 'Portal',
+      check: 'healthCheck',
+      host: '192.168.6.82', 
+      port: '8730',
+      path: '/PortalAMF/healthCheck?json'
+    },{
+      name: 'hoflow', 
+      label: 'Hosted Flow',
+      check: 'healthCheck',
+      host: '192.168.6.81', 
+      port: '9030',
+      path: '/hosted/healthCheck?json'
+    },{
+      name: 'ccs',
+      label: 'Customer Card Service',
+      check: 'healthCheck',
+      host: '192.168.6.85', 
+      port: '8430',
+      path: '/customer-card-service/healthCheck?json'
+    },
+    ],
+    serviceInterval: 5000,
+    plugins : { }
+  };
+    
+  
   settings['demo'] = {
     port: 8080,
     hostname: '0.0.0.0',
