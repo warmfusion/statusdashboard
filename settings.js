@@ -23,7 +23,7 @@ exports.create = function() {
   };
 
   settings['healthCheck'] = {
-    port: 8080,
+    port: 8081,
     hostname: '0.0.0.0',
     services: [{
       name: 'tm', 
@@ -76,8 +76,13 @@ exports.create = function() {
       path: '/customer-card-service/healthCheck?json'
     },
     ],
-    serviceInterval: 5000,
-    plugins : { }
+    serviceInterval: 10000,
+    serviceDelay: 5000,
+    plugins : {
+      console : {
+        enable: false
+      }
+    }
   };
     
   
