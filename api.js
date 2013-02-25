@@ -1,4 +1,4 @@
-var util = require('util');
+  var util = require('util');
 var http = require('http');
 var https = require('https');
 var net = require('net');
@@ -73,7 +73,7 @@ var checkHttpStatusCode = function(response, service) {
   service.statusCode = response.statusCode;
 };
 
-var healthCheckRange = function(min, max, value) {
+var checkRange = function(min, max, value) {
   if (min && max && value >= min && value < max) {
     return true;
   } else if ( (min && value >= min) || (max && value < max) ) {
@@ -83,14 +83,11 @@ var healthCheckRange = function(min, max, value) {
 };
 
 var checkHealthPageResponse = function(response, serviceDefinition, service){
-  checkHttpStatusCode(response, service);
   if(response.statusCode === 200){
     response.on('data', function(chunk){
       summary = JSON.parse(chunk);
-      version = summary.subChecks[0].reason;	
       if(summary.overallHealth.health === "OK"){
         service.status = 'up';	
-        service.message= version;
       }else {
         service.status = 'down';
         service.message = "Services up: "+ summary.subChecks.length; 
@@ -98,7 +95,7 @@ var checkHealthPageResponse = function(response, serviceDefinition, service){
       controller.emit(service.status, service);
     });
   }else{
-    service.message = "Error: " + response.statusCode + "  from server";
+    service.message = "Error: " + response.statusCode + " from server";
   }
 };
 
