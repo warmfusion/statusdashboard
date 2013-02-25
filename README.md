@@ -3,11 +3,7 @@ Status Dashboard
 
 Status Dashboard is status page for your configured services or applications.
 
-Demo:
-
-* @ [Heroku](http://heroku.com) demo: [http://statusdashboard-node.herokuapp.com](http://statusdashboard-node.herokuapp.com)
-* @ [Nodester](http://nodester.com) demo: [http://statusdashboard.nodester.com](http://statusdashboard.nodester.com)
-* @ [No.de](https://no.de) demo: [http://statusdashboard.no.de](http://statusdashboard.no.de)
+Demo @ [Heroku](http://heroku.com) : [http://statusdashboard-node.herokuapp.com](http://statusdashboard-node.herokuapp.com)
 
 Screenshots
 =======
@@ -18,14 +14,15 @@ Screenshots
 
 <img src="http://blog.bazoud.com/images/ssd3.png" alt="">
 
-Dependencies
-=======
 
-* See package.json
-* run the following command to install the dependencies
-<pre class="terminal">
-$ npm install
-</pre>
+Installation
+============
+
+* npm install statusdashboard
+or
+* npm install git+https://github.com/iobazoud/statusdashboard#master
+
+Optionally, you can install as a global package
 
 Roadmap
 =======
@@ -37,11 +34,9 @@ Roadmap
 How To Use
 =======
 
-* git clone git@github.com:obazoud/statusdashboard.git
-or fork it
-* node server.js
+### As an application
 
-Add your entry in settings.js. 
+Add your entry in settings.js.
 
 <pre class="json">
 settings['xxx'] = {
@@ -50,7 +45,7 @@ settings['xxx'] = {
 </pre>
 
 * export APP_ENV=demo
-* node server.js
+* ./bin/statusdashboard
 
 You can override settings with an external settings for private information like passwords, ..
 
@@ -70,6 +65,36 @@ exports.create = function() {
 
 * export APP_SETTINGS=~/.statusdashboard/settings.js
 
+### As a node module
+
+``
+var dashboard = require('statusdashboard').dashboard(settings);
+
+``
+
+#### Code
+
+##### dashboard.api.addService(serviceObject)
+
+Add a new service to be checked
+
+##### dashboard.api.removeService(ServiceName)
+
+Remove a service to be checked
+
+##### dashboard.api.startChecking
+
+Start the scheduled checks. Automatically is started by default when instanciating dashboard
+
+##### dashboard.api.stopChecking
+
+Stop the scheduled checks
+
+##### dashboard.api.getStatus()
+
+Return the current status of checked services
+
+**All other calls available in api.js are to be used at your own risk. You have been warned**
 
 Service
 =======
@@ -82,9 +107,13 @@ Plugins
 Some plugins are available out-of-the-box:
 
 * Console
-* IRC bot
-* Twitter
+* Graphite, send service state in [Graphite](http://graphite.wikidot.com/)
+* Heartbeat
 * History, save service state in <a href="http://redis.io">Redis</a> (Thanks to <a href="https://github.com/sreeix">sreeix</a> initial pull request) and graph it!
+* IRC bot
+* Mail
+* Twitter
+* Webhook
 
 <img src="http://blog.bazoud.com/images/ssd7a.png" alt="">
 
@@ -144,8 +173,24 @@ Early adopters
 
 <img src="http://blog.bazoud.com/images/ssd6.png" alt="">
 
+Contribute
+=======
+
+Here's the most direct way to get your work merged into the project.
+
+1. Fork the project
+2. Clone down your fork
+3. Create a feature branch
+4. Hack away and add tests, not necessarily in that order
+5. Make sure everything still passes by running tests
+6. If necessary, rebase your commits into logical chunks without errors
+7. Push the branch up to your fork
+8. Send a pull request for your branch
+
 In the news
 =======
 
 * IT Wars: [StatusDashboard monitoring avec Node.js](http://www.it-wars.com/article265/statusdashboard-monitoring-avec-node-js)
 * William Durand blog: [Services Status Dashboard](http://williamdurand.fr/2012/01/16/services-status-dashboard/)
+* C.Hamerling blog: [Node.js client for Status Dashboard](http://chamerling.org/2012/10/23/node-js-client-for-status-dashboard/)
+* C.Hamerling blog: [Monitoring Tool in the Cloud in (less than) 2 minutes...](http://chamerling.org/2013/01/24/monitoring-tool-in-the-cloud-in-less-than-2-minutes/)

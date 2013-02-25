@@ -19,7 +19,7 @@ exports.create = function() {
     },
     services: [],
     serviceInterval: 20000,
-    serviceDelay: 500
+    serviceDelay: 1000
   };
 
   settings['healthCheck'] = {
@@ -122,7 +122,7 @@ exports.create = function() {
         'ko': 'critical'
       }
     }, {
-      name: 'healthCheck-fixedvalue-ko)',
+      name: 'healthCheck-fixedvalue-ko',
       label: 'Olivier Bazoud blog: FixedValue: ko',
       check: 'http',
       host: 'blog.bazoud.com',
@@ -144,13 +144,19 @@ exports.create = function() {
         { 'status': 'critical', 'min': 10 }
       ]
     }, {
-      name: 'redis', 
+      name: 'redis',
       label: 'Redis server @ local',
       check: 'tcp',
-      host: '127.0.0.1', 
+      host: '127.0.0.1',
       port: '6379',
       cmd: 'PING\r\n',
       rcv: '+PONG\r\n'
+    }, {
+      name: 'redis-without-cmd',
+      label: 'Redis server @ local (without cmd)',
+      check: 'tcp',
+      host: '127.0.0.1',
+      port: '6379'
     }, {
       name: 'FTP-Local',
       label: 'Ftp @ local',
@@ -163,9 +169,10 @@ exports.create = function() {
       name: 'PID-file',
       label: 'Pid @ local',
       check: 'pidfile',
-      pidfile: '/tmp/terminal.pid'
+      pidfile: '/tmp/terminal.pid',
+      status: 'maintenance'
     }],
-    serviceInterval: 5000,
+    serviceInterval: 6000,
     plugins : {
       console : {
         enable: false
@@ -212,6 +219,19 @@ exports.create = function() {
             debug: false
           }
         }
+      },
+      webhook: {
+        enable : false,
+        url: 'http://localhost:8080/api/webhook/test'
+      },
+      heartbeat: {
+        enable: false,
+        period: 20000
+      },
+      graphite: {
+        enable: false,
+        url: 'plaintext://xxx:2003/',
+        prefix: 'xxx'
       }
     }
   };
