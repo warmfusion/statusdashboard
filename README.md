@@ -67,10 +67,9 @@ exports.create = function() {
 
 ### As a node module
 
-``
+```
 var dashboard = require('statusdashboard').dashboard(settings);
-
-``
+```
 
 #### Code
 
@@ -114,10 +113,32 @@ Some plugins are available out-of-the-box:
 * Mail
 * Twitter
 * Webhook
+* XMPP
 
 <img src="http://blog.bazoud.com/images/ssd7a.png" alt="">
 
 <img src="http://blog.bazoud.com/images/ssd8a.png" alt="">
+
+External Plugins
+================
+
+You can develop independent plugins and load them into Status Dashboard by using the external plugin feature. A plugin example is available at [http://github.com/chamerling/sd-plugin-sample](http://github.com/chamerling/sd-plugin-sample).
+
+Plugins can be installed using npm CLI (from the status-dashboard directory):
+
+    npm install sd-plugin-sample
+
+Or by adding them as dependency in the status-dashboard package.json descriptor.
+
+In order to activate plugins, you have to add them to the plugins.json file (\["sd-plugin-sample"\], \["my_plugin"\]) and turn on the external plugins feature in settings.js:
+
+    plugins : {
+      external: {
+        enable : true,
+        file : __dirname + '/plugins.json'
+      },
+      ...
+    }
 
 REST API
 =======
@@ -192,5 +213,11 @@ In the news
 
 * IT Wars: [StatusDashboard monitoring avec Node.js](http://www.it-wars.com/article265/statusdashboard-monitoring-avec-node-js)
 * William Durand blog: [Services Status Dashboard](http://williamdurand.fr/2012/01/16/services-status-dashboard/)
-* C.Hamerling blog: [Node.js client for Status Dashboard](http://chamerling.org/2012/10/23/node-js-client-for-status-dashboard/)
-* C.Hamerling blog: [Monitoring Tool in the Cloud in (less than) 2 minutes...](http://chamerling.org/2013/01/24/monitoring-tool-in-the-cloud-in-less-than-2-minutes/)
+* C.Hamerling blog: [Node.js client for Status Dashboard](http://chamerling.wordpress.com/2012/10/23/node-js-client-for-status-dashboard/)
+* C.Hamerling blog: [Monitoring Tool in the Cloud in (less than) 2 minutes...](http://chamerling.wordpress.com/2013/01/24/monitoring-tool-in-the-cloud-in-less-than-2-minutes/)
+
+Licence
+=======
+
+Statusdashboard is provided under Apache Software Licence 2.0.
+

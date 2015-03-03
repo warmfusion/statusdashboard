@@ -171,9 +171,20 @@ exports.create = function() {
       check: 'pidfile',
       pidfile: '/tmp/terminal.pid',
       status: 'maintenance'
+    }, {
+      name: 'Local HTTP sample',
+      label: 'Local HTTP Sample: healthCheck',
+      check: 'http',
+      host: 'localhost',
+      port: '3303',
+      path: '/'
     }],
     serviceInterval: 6000,
     plugins : {
+      external: {
+        enable : false,
+        file : __dirname + '/plugins.json'
+      },
       console : {
         enable: false
       },
@@ -186,6 +197,15 @@ exports.create = function() {
           port: 8001,
           channels: ['#statusdashboard']
         }
+      },
+      xmpp: {
+        enable: false,
+        from: {
+          jid: 'from@jabber.org',
+          password: 'XXX',
+          host : 'jabber.org'
+        },
+        to: 'to@jabber.org'
       },
       twitter: {
         enable: false,
