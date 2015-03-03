@@ -33,7 +33,7 @@
     "statusdashboard": "./bin/statusdashboard"
   },
   "engines": {
-    "node": ">=0.6.1"
+    "node": "0.8.x"
   },
   "dependencies": {
     "socket.io": "0.9.16",
