@@ -198,22 +198,6 @@ exports.create = function() {
           channels: ['#statusdashboard']
         }
       },
-      xmpp: {
-        enable: false,
-        from: {
-          jid: 'from@jabber.org',
-          password: 'XXX',
-          host : 'jabber.org'
-        },
-        to: 'to@jabber.org'
-      },
-      twitter: {
-        enable: false,
-        consumer_key: "",
-        consumer_secret: "",
-        access_token_key: "",
-        access_token_secret: ""
-      },
       history: {
         enable: true,
         host: "127.0.0.1",
