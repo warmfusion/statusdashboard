@@ -55,7 +55,6 @@ exports.create = function() {
       path: '/'
     }],
     serviceInterval: 6000,
-    }
   };
 
   var mySettings = defaults;
