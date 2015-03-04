@@ -29,21 +29,28 @@ exports.create = function() {
       name: 'techradar', 
       label: 'TechRadar.com',
       check: 'http',
-      host: 'techradar.com', 
+      host: 'www.techradar.com', 
       port: '80',
       path: '/'
     }, {
       name: 'creativebloq.com', 
       label: 'CreativeBloq.com',
       check: 'http',
-      host: 'creativebloq.com', 
+      host: 'www.creativebloq.com', 
       port: '80',
       path: '/'
     }, {
       name: 'musicradar.com',
       label: 'MusicRadar.com',
       check: 'http',
-      host: 'musicradar.com',
+      host: 'www.musicradar.com',
+      port: '80',
+      path: '/'
+    },{
+      name: 'futureplc.com',
+      label: 'futureplc.com',
+      check: 'http',
+      host: 'www.futureplc.com',
       port: '80',
       path: '/'
     }],
