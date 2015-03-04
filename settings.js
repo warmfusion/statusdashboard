@@ -11,7 +11,7 @@ exports.create = function() {
   var settings = {};
 
   var defaults = {
-    title: 'Services Status Dashboard',
+    title: 'Future Status Dashboard',
     hostname: '127.0.0.1',
     port: 8080,
     client: {
