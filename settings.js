@@ -53,6 +53,27 @@ exports.create = function() {
       host: 'www.futureplc.com',
       port: '80',
       path: '/'
+    },{
+      name: 'gizmodo.co.uk',
+      label: 'gizmodo.co.uk',
+      check: 'http',
+      host: 'www.gizmodo.co.uk',
+      port: '80',
+      path: '/'
+    },{
+      name: 'lifehacker.com',
+      label: 'lifehacker.com',
+      check: 'http',
+      host: 'www.lifehacker.com',
+      port: '80',
+      path: '/'
+    },{
+      name: 'digitalcameraworld.com',
+      label: 'digitalcameraworld.com',
+      check: 'http',
+      host: 'www.digitalcameraworld.com',
+      port: '80',
+      path: '/'
     }],
     serviceInterval: 6000,
     plugins : {
