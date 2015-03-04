@@ -55,63 +55,6 @@ exports.create = function() {
       path: '/'
     }],
     serviceInterval: 6000,
-    plugins : {
-      external: {
-        enable : false,
-        file : __dirname + '/plugins.json'
-      },
-      console : {
-        enable: false
-      },
-      irc : {
-        enable: false,
-        server: 'irc.freenode.net',
-        nick: 'status',
-        options: {
-          debug: false,
-          port: 8001,
-          channels: ['#statusdashboard']
-        }
-      },
-      history: {
-        enable: true,
-        host: "127.0.0.1",
-        port: 6379,
-        namespace: "statusdashboard",
-        options: {
-        },
-        client: true
-      },
-      mail: {
-        enable: false,
-        sender: 'xxx',
-        to: 'xxx',
-        subject: '[statusdashboard]: Alert',
-        options: {
-          nodemailer: {
-            host: 'smtp.gmail.com',
-            port: 465,
-            use_authentication: true,
-            ssl: true,
-            user: 'xxx',
-            pass: 'xxx',
-            debug: false
-          }
-        }
-      },
-      webhook: {
-        enable : false,
-        url: 'http://localhost:8080/api/webhook/test'
-      },
-      heartbeat: {
-        enable: false,
-        period: 20000
-      },
-      graphite: {
-        enable: false,
-        url: 'plaintext://xxx:2003/',
-        prefix: 'xxx'
-      }
     }
   };
 
