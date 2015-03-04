@@ -22,161 +22,29 @@ exports.create = function() {
     serviceDelay: 1000
   };
 
-  settings['healthCheck'] = {
-    port: 8081,
-    hostname: '0.0.0.0',
-    services: [{
-      name: 'tm', 
-      label: 'TransactionProcessor',
-      check: 'healthCheck',
-      host: '192.168.6.85', 
-      port: '8430',
-      path: '/processor/healthCheck?json'
-    },{
-      name: 'cm', 
-      label: 'Config Manager',
-      check: 'healthCheck',
-      host: '192.168.6.84', 
-      port: '8330',
-      path: '/cm/healthCheck?json'
-    },{
-      name: 'ta', 
-      label: 'Acceptor',
-      check: 'healthCheck',
-      host: '192.168.6.83', 
-      port: '8530',
-      path: '/acceptor/healthCheck?json'
-    },{
-      name: 'rs', 
-      label: 'Reporting Server',
-      check: 'healthCheck',
-      host: '192.168.6.86', 
-      port: '8630',
-      path: '/rs/healthCheck?json'
-    },{
-      name: 'portal', 
-      label: 'Portal',
-      check: 'healthCheck',
-      host: '192.168.6.82', 
-      port: '8730',
-      path: '/PortalAMF/healthCheck?json'
-    },{
-      name: 'hoflow', 
-      label: 'Hosted Flow',
-      check: 'healthCheck',
-      host: '192.168.6.81', 
-      port: '9030',
-      path: '/hosted/healthCheck?json'
-    },{
-      name: 'ccs',
-      label: 'Customer Card Service',
-      check: 'healthCheck',
-      host: '192.168.6.85', 
-      port: '8430',
-      path: '/customer-card-service/healthCheck?json'
-    },
-    ],
-    serviceInterval: 10000,
-    serviceDelay: 5000,
-    plugins : {
-      console : {
-        enable: false
-      }
-    }
-  };
-    
-  
   settings['demo'] = {
     port: 8080,
     hostname: '0.0.0.0',
     services: [{
-      name: 'couchdb', 
-      label: 'Couchdb server @ local',
+      name: 'techradar', 
+      label: 'TechRadar.com',
       check: 'http',
-      host: '127.0.0.1', 
-      port: '5984',
-      path: '/'
-    }, {
-      name: 'blog.bazoud.com', 
-      label: 'Olivier Bazoud blog: Index',
-      check: 'http',
-      host: 'blog.bazoud.com', 
+      host: 'techradar.com', 
       port: '80',
       path: '/'
     }, {
-      name: 'blog.bazoud.com-healthCheck',
-      label: 'Olivier Bazoud blog: healthCheck',
+      name: 'creativebloq.com', 
+      label: 'CreativeBloq.com',
       check: 'http',
-      host: 'blog.bazoud.com',
+      host: 'creativebloq.com', 
       port: '80',
-      path: '/healthCheck'
+      path: '/'
     }, {
-      name: 'blog.bazoud.com-fixedvalue-ok',
-      label: 'Olivier Bazoud blog: FixedValue ok',
+      name: 'musicradar.com',
+      label: 'MusicRadar.com',
       check: 'http',
-      host: 'blog.bazoud.com',
+      host: 'musicradar.com',
       port: '80',
-      path: '/healthCheck',
-      checkFixedValueResponse: {
-        'ok': 'up',
-        'ko': 'critical'
-      }
-    }, {
-      name: 'healthCheck-fixedvalue-ko',
-      label: 'Olivier Bazoud blog: FixedValue: ko',
-      check: 'http',
-      host: 'blog.bazoud.com',
-      port: '80',
-      path: '/healthCheckKO',
-      checkFixedValueResponse: {
-        'ok': 'up',
-        'ko': 'critical'
-      }
-    }, {
-      name: 'blog.bazoud.com-rangevalues-10',
-      label: 'Olivier Bazoud blog: RangeValues 10',
-      check: 'http',
-      host: 'blog.bazoud.com',
-      port: '80',
-      path: '/healthCheckRange',
-      checkRangeValuesResponse: [
-        { 'status': 'up', 'min': 0, 'max': 10 },
-        { 'status': 'critical', 'min': 10 }
-      ]
-    }, {
-      name: 'redis',
-      label: 'Redis server @ local',
-      check: 'tcp',
-      host: '127.0.0.1',
-      port: '6379',
-      cmd: 'PING\r\n',
-      rcv: '+PONG\r\n'
-    }, {
-      name: 'redis-without-cmd',
-      label: 'Redis server @ local (without cmd)',
-      check: 'tcp',
-      host: '127.0.0.1',
-      port: '6379'
-    }, {
-      name: 'FTP-Local',
-      label: 'Ftp @ local',
-      check: 'ftp',
-      host: 'localhost',
-      port: '21',
-      username: 'statusdashboard',
-      password: 'statusdashboard'
-    }, {
-      name: 'PID-file',
-      label: 'Pid @ local',
-      check: 'pidfile',
-      pidfile: '/tmp/terminal.pid',
-      status: 'maintenance'
-    }, {
-      name: 'Local HTTP sample',
-      label: 'Local HTTP Sample: healthCheck',
-      check: 'http',
-      host: 'localhost',
-      port: '3303',
       path: '/'
     }],
     serviceInterval: 6000,
