@@ -46,7 +46,6 @@ exports.create = function() {
       host: 'www.musicradar.com',
       port: '80',
       path: '/'
-    },{
     }, {
       name: 't3.com',
       label: 't3.com',
