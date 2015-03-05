@@ -47,6 +47,14 @@ exports.create = function() {
       port: '80',
       path: '/'
     },{
+    }, {
+      name: 't3.com',
+      label: 't3.com',
+      check: 'http',
+      host: 'www.t3.com',
+      port: '80',
+      path: '/'
+    },{
       name: 'futureplc.com',
       label: 'futureplc.com',
       check: 'http',
@@ -65,6 +73,13 @@ exports.create = function() {
       label: 'lifehacker.co.uk',
       check: 'http',
       host: 'www.lifehacker.co.uk',
+      port: '80',
+      path: '/'
+    },{
+      name: 'kotaku.co.uk',
+      label: 'kotaku.co.uk',
+      check: 'http',
+      host: 'www.kotaku.co.uk',
       port: '80',
       path: '/'
     },{
