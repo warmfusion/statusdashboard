@@ -25,7 +25,6 @@ exports.create = function() {
   settings['demo'] = {
     port: 8080,
     hostname: '0.0.0.0',
-    group: 'Live',
     services: [{
       name: 'techradar', 
       label: 'TechRadar.com',
@@ -62,10 +61,10 @@ exports.create = function() {
       port: '80',
       path: '/'
     },{
-      name: 'lifehacker.com',
-      label: 'lifehacker.com',
+      name: 'lifehacker.co.uk',
+      label: 'lifehacker.co.uk',
       check: 'http',
-      host: 'lifehacker.com',
+      host: 'lifehacker.co.uk',
       port: '80',
       path: '/'
     },{
