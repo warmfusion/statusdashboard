@@ -64,7 +64,7 @@ exports.create = function() {
       name: 'lifehacker.co.uk',
       label: 'lifehacker.co.uk',
       check: 'http',
-      host: 'lifehacker.co.uk',
+      host: 'www.lifehacker.co.uk',
       port: '80',
       path: '/'
     },{
