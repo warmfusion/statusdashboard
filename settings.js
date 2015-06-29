@@ -61,13 +61,6 @@ exports.create = function() {
       port: '80',
       path: '/'
     },{
-      name: 'yourfuturejob.com',
-      label: 'yourfuturejob.com',
-      check: 'http',
-      host: 'www.yourfuturejob.com',
-      port: '80',
-      path: '/'
-    },{
       name: 'gizmodo.co.uk',
       label: 'gizmodo.co.uk',
       check: 'http',
