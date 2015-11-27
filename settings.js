@@ -33,44 +33,44 @@ exports.create = function() {
       port: '80',
       path: '/'
     },{
-      name: 'www.mobiles.co.uk/contract-phones.html', 
-      label: 'www.mobiles.co.uk/contract-phones.html',
+      name: 'www.mobiles.co.uk', 
+      label: 'www.mobiles.co.uk',
       check: 'http',
-      host: 'www.www.mobiles.co.uk/contract-phones.html', 
+      host: 'www.www.mobiles.co.uk', 
       port: '80',
-      path: '/'
+      path: '/contract-phones.html'
     }, 
    {
-      name: 'www.amazon.co.uk/gp/deals/', 
-      label: 'www.amazon.co.uk/gp/deals/',
+      name: 'www.amazon.co.uk', 
+      label: 'www.amazon.co.uk',
       check: 'http',
-      host: 'www.www.amazon.co.uk/gp/deals/', 
+      host: 'www.www.amazon.co.uk', 
       port: '80',
-      path: '/'
+      path: '/gp/deals/'
     }, 
    {
-      name: 'www.amazon.com/gp/goldbox/', 
-      label: 'www.amazon.com/gp/goldbox/',
+      name: 'www.amazon.com', 
+      label: 'www.amazon.com',
       check: 'http',
-      host: 'www.www.amazon.com/gp/goldbox/', 
+      host: 'www.www.amazon.com', 
       port: '80',
-      path: '/'
+      path: '/gp/goldbox/'
     }, 
    {
-      name: 'www.amazon.ca/gp/goldbox', 
-      label: 'www.amazon.ca/gp/goldbox',
+      name: 'www.amazon.ca', 
+      label: 'www.amazon.ca',
       check: 'http',
-      host: 'www.www.amazon.ca/gp/goldbox', 
+      host: 'www.www.amazon.ca', 
       port: '80',
-      path: '/'
+      path: '/gp/goldbox'
     }, 
    {
-      name: 'www.amazon.de/gp/angebote', 
-      label: 'www.amazon.de/gp/angebote',
+      name: 'www.amazon.de', 
+      label: 'www.amazon.de',
       check: 'http',
-      host: 'www.www.amazon.de/gp/angebote', 
+      host: 'www.www.amazon.de', 
       port: '80',
-      path: '/'
+      path: '/gp/angebote'
     }, 
    {
       name: 'www.mobiles.co.uk', 
@@ -113,108 +113,108 @@ exports.create = function() {
       path: '/'
     }, 
    {
-      name: 'www.johnlewis.com/home-garden/bedroom/c6000074?rdr=1', 
-      label: 'www.johnlewis.com/home-garden/bedroom/c6000074?rdr=1',
+      name: 'www.johnlewis.com', 
+      label: 'www.johnlewis.com',
       check: 'http',
-      host: 'www.www.johnlewis.com/home-garden/bedroom/c6000074?rdr=1', 
+      host: 'www.www.johnlewis.com', 
       port: '80',
-      path: '/'
+      path: '/home-garden/bedroom/c6000074?rdr=1'
     }, 
    {
-      name: 'www.carphonewarehouse.com/mobiles', 
-      label: 'www.carphonewarehouse.com/mobiles',
+      name: 'www.carphonewarehouse.com', 
+      label: 'www.carphonewarehouse.com',
       check: 'http',
-      host: 'www.www.carphonewarehouse.com/mobiles', 
+      host: 'www.www.carphonewarehouse.com', 
       port: '80',
-      path: '/'
+      path: '/mobiles'
     }, 
    {
-      name: 'www.mobilephonesdirect.co.uk/contract-deals', 
-      label: 'www.mobilephonesdirect.co.uk/contract-deals',
+      name: 'www.mobilephonesdirect.co.uk', 
+      label: 'www.mobilephonesdirect.co.uk',
       check: 'http',
-      host: 'www.www.mobilephonesdirect.co.uk/contract-deals', 
+      host: 'www.www.mobilephonesdirect.co.uk', 
       port: '80',
-      path: '/'
+      path: '/contract-deals'
     }, 
    {
-      name: 'www.buymobiles.net/apple', 
-      label: 'www.buymobiles.net/apple',
+      name: 'www.buymobiles.net', 
+      label: 'www.buymobiles.net',
       check: 'http',
-      host: 'www.www.buymobiles.net/apple', 
+      host: 'www.www.buymobiles.net', 
       port: '80',
-      path: '/'
+      path: '/apple'
     }, 
    {
-      name: 'www.tesco.com/direct/', 
-      label: 'www.tesco.com/direct/',
+      name: 'www.tesco.com', 
+      label: 'www.tesco.com',
       check: 'http',
-      host: 'www.www.tesco.com/direct/', 
+      host: 'www.www.tesco.com', 
       port: '80',
-      path: '/'
+      path: '/direct/'
     }, 
    {
-      name: 'www.currys.co.uk/gbuk/tv-and-home-entertainment-31-u.html', 
-      label: 'www.currys.co.uk/gbuk/tv-and-home-entertainment-31-u.html',
+      name: 'www.currys.co.uk', 
+      label: 'www.currys.co.uk',
       check: 'http',
-      host: 'www.www.currys.co.uk/gbuk/tv-and-home-entertainment-31-u.html', 
+      host: 'www.www.currys.co.uk', 
       port: '80',
-      path: '/'
+      path: '/gbuk/tv-and-home-entertainment-31-u.html'
     }, 
    {
-      name: 'www.microsoftstore.com/store/msuk/en_GB/home', 
-      label: 'www.microsoftstore.com/store/msuk/en_GB/home',
+      name: 'www.microsoftstore.com', 
+      label: 'www.microsoftstore.com',
       check: 'http',
-      host: 'www.www.microsoftstore.com/store/msuk/en_GB/home', 
+      host: 'www.www.microsoftstore.com', 
       port: '80',
-      path: '/'
+      path: '/store/msuk/en_GB/home'
     }, 
    {
-      name: 'www.argos.co.uk/static/Home.htm', 
-      label: 'www.argos.co.uk/static/Home.htm',
+      name: 'www.argos.co.uk', 
+      label: 'www.argos.co.uk',
       check: 'http',
-      host: 'www.www.argos.co.uk/static/Home.htm', 
+      host: 'www.www.argos.co.uk', 
       port: '80',
-      path: '/'
+      path: '/static/Home.htm'
     }, 
    {
-      name: 'www.newegg.com/Computer-Systems/Store', 
-      label: 'www.newegg.com/Computer-Systems/Store',
+      name: 'www.newegg.com', 
+      label: 'www.newegg.com',
       check: 'http',
-      host: 'www.www.newegg.com/Computer-Systems/Store', 
+      host: 'www.www.newegg.com', 
       port: '80',
-      path: '/'
+      path: '/Computer-Systems/Store'
     }, 
    {
-      name: 'www.simplygames.com/xbox-one/games', 
-      label: 'www.simplygames.com/xbox-one/games',
+      name: 'www.simplygames.com', 
+      label: 'www.simplygames.com',
       check: 'http',
-      host: 'www.www.simplygames.com/xbox-one/games', 
+      host: 'www.www.simplygames.com', 
       port: '80',
-      path: '/'
+      path: '/xbox-one/games'
     }, 
    {
-      name: 'www.walmart.com/all-departments', 
-      label: 'www.walmart.com/all-departments',
+      name: 'www.walmart.com', 
+      label: 'www.walmart.com',
       check: 'http',
-      host: 'www.www.walmart.com/all-departments', 
+      host: 'www.www.walmart.com', 
       port: '80',
-      path: '/'
+      path: '/all-departments'
     }, 
    {
-      name: 'www.zavvi.com/home.dept', 
-      label: 'www.zavvi.com/home.dept',
+      name: 'www.zavvi.com', 
+      label: 'www.zavvi.com',
       check: 'http',
-      host: 'www.www.zavvi.com/home.dept', 
+      host: 'www.www.zavvi.com', 
       port: '80',
-      path: '/'
+      path: '/home.dept'
     }, 
    {
-      name: 'www.wexphotographic.com/cameras/c2017', 
-      label: 'www.wexphotographic.com/cameras/c2017',
+      name: 'www.wexphotographic.com', 
+      label: 'www.wexphotographic.com',
       check: 'http',
-      host: 'www.www.wexphotographic.com/cameras/c2017', 
+      host: 'www.www.wexphotographic.com', 
       port: '80',
-      path: '/'
+      path: '/cameras/c2017'
     }, 
    {
       name: 'www.sainsburys.co.uk', 
@@ -225,50 +225,58 @@ exports.create = function() {
       path: '/'
     }, 
    {
-      name: 'www.game.co.uk/', 
-      label: 'www.game.co.uk/',
+      name: 'www.microsoft.com', 
+      label: 'www.microsoft.com',
       check: 'http',
-      host: 'www.www.game.co.uk/', 
+      host: 'www.www.microsoft.com', 
+      port: '80',
+      path: '/en-gb/'
+    }, 
+   {
+      name: 'www.game.co.uk', 
+      label: 'www.game.co.uk',
+      check: 'http',
+      host: 'www.www.game.co.uk', 
       port: '80',
       path: '/'
     }, 
    {
-      name: 'www.jessops.com/cameras', 
-      label: 'www.jessops.com/cameras',
+      name: 'www.jessops.com', 
+      label: 'www.jessops.com',
       check: 'http',
-      host: 'www.www.jessops.com/cameras', 
+      host: 'www.www.jessops.com', 
       port: '80',
-      path: '/'
+      path: '/cameras'
     }, 
    {
-      name: 'www.pcworld.co.uk/gbuk/computing/laptops-703-c.html', 
-      label: 'www.pcworld.co.uk/gbuk/computing/laptops-703-c.html',
+      name: 'www.pcworld.co.uk', 
+      label: 'www.pcworld.co.uk',
       check: 'http',
-      host: 'www.www.pcworld.co.uk/gbuk/computing/laptops-703-c.html', 
+      host: 'www.www.pcworld.co.uk', 
       port: '80',
-      path: '/'
+      path: '/gbuk/computing/laptops-703-c.html'
     }, 
    {
-      name: 'www.apple.com/uk/ipad/', 
-      label: 'www.apple.com/uk/ipad/',
+      name: 'www.apple.com', 
+      label: 'www.apple.com',
       check: 'http',
-      host: 'www.www.apple.com/uk/ipad/', 
+      host: 'www.www.apple.com', 
       port: '80',
-      path: '/'
+      path: '/uk/ipad/'
     }, 
    {
-      name: 'www.debenhams.com/women', 
-      label: 'www.debenhams.com/women',
+      name: 'www.debenhams.com', 
+      label: 'www.debenhams.com',
       check: 'http',
-      host: 'www.www.debenhams.com/women', 
+      host: 'www.www.debenhams.com', 
       port: '80',
-      path: '/'
+      path: '/women'
     }, 
    {
-      name: 'www.hotukdeals.com/', 
-      label: 'www.hotukdeals.com/',
+      name: 'www.hotukdeals.com', 
+      label: 'www.hotukdeals.com',
       check: 'http',
-      host: 'www.www.hotukdeals.com/', 
+      host: 'www.www.hotukdeals.com', 
       port: '80',
       path: '/'
     }, 
@@ -281,12 +289,12 @@ exports.create = function() {
       path: '/'
     }, 
    {
-      name: 'www.smythstoys.com/uk/en-gb/', 
-      label: 'www.smythstoys.com/uk/en-gb/',
+      name: 'www.smythstoys.com', 
+      label: 'www.smythstoys.com',
       check: 'http',
-      host: 'www.www.smythstoys.com/uk/en-gb/', 
+      host: 'www.www.smythstoys.com', 
       port: '80',
-      path: '/'
+      path: '/uk/en-gb/'
     } ],
     serviceInterval: 6000,
     plugins : {
