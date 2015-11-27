@@ -32,11 +32,11 @@ exports.create = function() {
       host: 'www.techradar.com', 
       port: '80',
       path: '/'
-    },{
+    },   {
       name: 'www.mobiles.co.uk', 
       label: 'www.mobiles.co.uk',
       check: 'http',
-      host: 'www.www.mobiles.co.uk', 
+      host: 'www.mobiles.co.uk', 
       port: '80',
       path: '/contract-phones.html'
     }, 
@@ -44,7 +44,7 @@ exports.create = function() {
       name: 'www.amazon.co.uk', 
       label: 'www.amazon.co.uk',
       check: 'http',
-      host: 'www.www.amazon.co.uk', 
+      host: 'www.amazon.co.uk', 
       port: '80',
       path: '/gp/deals/'
     }, 
@@ -52,7 +52,7 @@ exports.create = function() {
       name: 'www.amazon.com', 
       label: 'www.amazon.com',
       check: 'http',
-      host: 'www.www.amazon.com', 
+      host: 'www.amazon.com', 
       port: '80',
       path: '/gp/goldbox/'
     }, 
@@ -60,7 +60,7 @@ exports.create = function() {
       name: 'www.amazon.ca', 
       label: 'www.amazon.ca',
       check: 'http',
-      host: 'www.www.amazon.ca', 
+      host: 'www.amazon.ca', 
       port: '80',
       path: '/gp/goldbox'
     }, 
@@ -68,7 +68,7 @@ exports.create = function() {
       name: 'www.amazon.de', 
       label: 'www.amazon.de',
       check: 'http',
-      host: 'www.www.amazon.de', 
+      host: 'www.amazon.de', 
       port: '80',
       path: '/gp/angebote'
     }, 
@@ -76,7 +76,7 @@ exports.create = function() {
       name: 'www.mobiles.co.uk', 
       label: 'www.mobiles.co.uk',
       check: 'http',
-      host: 'www.www.mobiles.co.uk', 
+      host: 'www.mobiles.co.uk', 
       port: '80',
       path: '/'
     }, 
@@ -84,7 +84,7 @@ exports.create = function() {
       name: 'www.amazon.co.uk', 
       label: 'www.amazon.co.uk',
       check: 'http',
-      host: 'www.www.amazon.co.uk', 
+      host: 'www.amazon.co.uk', 
       port: '80',
       path: '/'
     }, 
@@ -92,7 +92,7 @@ exports.create = function() {
       name: 'www.amazon.com', 
       label: 'www.amazon.com',
       check: 'http',
-      host: 'www.www.amazon.com', 
+      host: 'www.amazon.com', 
       port: '80',
       path: '/'
     }, 
@@ -100,7 +100,7 @@ exports.create = function() {
       name: 'www.amazon.ca', 
       label: 'www.amazon.ca',
       check: 'http',
-      host: 'www.www.amazon.ca', 
+      host: 'www.amazon.ca', 
       port: '80',
       path: '/'
     }, 
@@ -108,7 +108,7 @@ exports.create = function() {
       name: 'www.amazon.de', 
       label: 'www.amazon.de',
       check: 'http',
-      host: 'www.www.amazon.de', 
+      host: 'www.amazon.de', 
       port: '80',
       path: '/'
     }, 
@@ -116,7 +116,7 @@ exports.create = function() {
       name: 'www.johnlewis.com', 
       label: 'www.johnlewis.com',
       check: 'http',
-      host: 'www.www.johnlewis.com', 
+      host: 'www.johnlewis.com', 
       port: '80',
       path: '/home-garden/bedroom/c6000074?rdr=1'
     }, 
@@ -124,7 +124,7 @@ exports.create = function() {
       name: 'www.carphonewarehouse.com', 
       label: 'www.carphonewarehouse.com',
       check: 'http',
-      host: 'www.www.carphonewarehouse.com', 
+      host: 'www.carphonewarehouse.com', 
       port: '80',
       path: '/mobiles'
     }, 
@@ -132,7 +132,7 @@ exports.create = function() {
       name: 'www.mobilephonesdirect.co.uk', 
       label: 'www.mobilephonesdirect.co.uk',
       check: 'http',
-      host: 'www.www.mobilephonesdirect.co.uk', 
+      host: 'www.mobilephonesdirect.co.uk', 
       port: '80',
       path: '/contract-deals'
     }, 
@@ -140,7 +140,7 @@ exports.create = function() {
       name: 'www.buymobiles.net', 
       label: 'www.buymobiles.net',
       check: 'http',
-      host: 'www.www.buymobiles.net', 
+      host: 'www.buymobiles.net', 
       port: '80',
       path: '/apple'
     }, 
@@ -148,7 +148,7 @@ exports.create = function() {
       name: 'www.tesco.com', 
       label: 'www.tesco.com',
       check: 'http',
-      host: 'www.www.tesco.com', 
+      host: 'www.tesco.com', 
       port: '80',
       path: '/direct/'
     }, 
@@ -156,7 +156,7 @@ exports.create = function() {
       name: 'www.currys.co.uk', 
       label: 'www.currys.co.uk',
       check: 'http',
-      host: 'www.www.currys.co.uk', 
+      host: 'www.currys.co.uk', 
       port: '80',
       path: '/gbuk/tv-and-home-entertainment-31-u.html'
     }, 
@@ -164,7 +164,7 @@ exports.create = function() {
       name: 'www.microsoftstore.com', 
       label: 'www.microsoftstore.com',
       check: 'http',
-      host: 'www.www.microsoftstore.com', 
+      host: 'www.microsoftstore.com', 
       port: '80',
       path: '/store/msuk/en_GB/home'
     }, 
@@ -172,7 +172,7 @@ exports.create = function() {
       name: 'www.argos.co.uk', 
       label: 'www.argos.co.uk',
       check: 'http',
-      host: 'www.www.argos.co.uk', 
+      host: 'www.argos.co.uk', 
       port: '80',
       path: '/static/Home.htm'
     }, 
@@ -180,7 +180,7 @@ exports.create = function() {
       name: 'www.newegg.com', 
       label: 'www.newegg.com',
       check: 'http',
-      host: 'www.www.newegg.com', 
+      host: 'www.newegg.com', 
       port: '80',
       path: '/Computer-Systems/Store'
     }, 
@@ -188,7 +188,7 @@ exports.create = function() {
       name: 'www.simplygames.com', 
       label: 'www.simplygames.com',
       check: 'http',
-      host: 'www.www.simplygames.com', 
+      host: 'www.simplygames.com', 
       port: '80',
       path: '/xbox-one/games'
     }, 
@@ -196,7 +196,7 @@ exports.create = function() {
       name: 'www.walmart.com', 
       label: 'www.walmart.com',
       check: 'http',
-      host: 'www.www.walmart.com', 
+      host: 'www.walmart.com', 
       port: '80',
       path: '/all-departments'
     }, 
@@ -204,7 +204,7 @@ exports.create = function() {
       name: 'www.zavvi.com', 
       label: 'www.zavvi.com',
       check: 'http',
-      host: 'www.www.zavvi.com', 
+      host: 'www.zavvi.com', 
       port: '80',
       path: '/home.dept'
     }, 
@@ -212,7 +212,7 @@ exports.create = function() {
       name: 'www.wexphotographic.com', 
       label: 'www.wexphotographic.com',
       check: 'http',
-      host: 'www.www.wexphotographic.com', 
+      host: 'www.wexphotographic.com', 
       port: '80',
       path: '/cameras/c2017'
     }, 
@@ -220,7 +220,7 @@ exports.create = function() {
       name: 'www.sainsburys.co.uk', 
       label: 'www.sainsburys.co.uk',
       check: 'http',
-      host: 'www.www.sainsburys.co.uk', 
+      host: 'www.sainsburys.co.uk', 
       port: '80',
       path: '/'
     }, 
@@ -228,7 +228,7 @@ exports.create = function() {
       name: 'www.microsoft.com', 
       label: 'www.microsoft.com',
       check: 'http',
-      host: 'www.www.microsoft.com', 
+      host: 'www.microsoft.com', 
       port: '80',
       path: '/en-gb/'
     }, 
@@ -236,7 +236,7 @@ exports.create = function() {
       name: 'www.game.co.uk', 
       label: 'www.game.co.uk',
       check: 'http',
-      host: 'www.www.game.co.uk', 
+      host: 'www.game.co.uk', 
       port: '80',
       path: '/'
     }, 
@@ -244,7 +244,7 @@ exports.create = function() {
       name: 'www.jessops.com', 
       label: 'www.jessops.com',
       check: 'http',
-      host: 'www.www.jessops.com', 
+      host: 'www.jessops.com', 
       port: '80',
       path: '/cameras'
     }, 
@@ -252,7 +252,7 @@ exports.create = function() {
       name: 'www.pcworld.co.uk', 
       label: 'www.pcworld.co.uk',
       check: 'http',
-      host: 'www.www.pcworld.co.uk', 
+      host: 'www.pcworld.co.uk', 
       port: '80',
       path: '/gbuk/computing/laptops-703-c.html'
     }, 
@@ -260,7 +260,7 @@ exports.create = function() {
       name: 'www.apple.com', 
       label: 'www.apple.com',
       check: 'http',
-      host: 'www.www.apple.com', 
+      host: 'www.apple.com', 
       port: '80',
       path: '/uk/ipad/'
     }, 
@@ -268,7 +268,7 @@ exports.create = function() {
       name: 'www.debenhams.com', 
       label: 'www.debenhams.com',
       check: 'http',
-      host: 'www.www.debenhams.com', 
+      host: 'www.debenhams.com', 
       port: '80',
       path: '/women'
     }, 
@@ -276,7 +276,7 @@ exports.create = function() {
       name: 'www.hotukdeals.com', 
       label: 'www.hotukdeals.com',
       check: 'http',
-      host: 'www.www.hotukdeals.com', 
+      host: 'www.hotukdeals.com', 
       port: '80',
       path: '/'
     }, 
@@ -284,7 +284,7 @@ exports.create = function() {
       name: 'store.goldenjoystick.com', 
       label: 'store.goldenjoystick.com',
       check: 'http',
-      host: 'www.store.goldenjoystick.com', 
+      host: 'store.goldenjoystick.com', 
       port: '80',
       path: '/'
     }, 
@@ -292,10 +292,12 @@ exports.create = function() {
       name: 'www.smythstoys.com', 
       label: 'www.smythstoys.com',
       check: 'http',
-      host: 'www.www.smythstoys.com', 
+      host: 'www.smythstoys.com', 
       port: '80',
       path: '/uk/en-gb/'
-    } ],
+    }, 
+
+ ],
     serviceInterval: 6000,
     plugins : {
       external: {
