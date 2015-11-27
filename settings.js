@@ -32,63 +32,262 @@ exports.create = function() {
       host: 'www.techradar.com', 
       port: '80',
       path: '/'
-    }, {
-      name: 'creativebloq.com', 
-      label: 'CreativeBloq.com',
-      check: 'http',
-      host: 'www.creativebloq.com', 
-      port: '80',
-      path: '/'
-    }, {
-      name: 'musicradar.com',
-      label: 'MusicRadar.com',
-      check: 'http',
-      host: 'www.musicradar.com',
-      port: '80',
-      path: '/'
-    }, {
-      name: 't3.com',
-      label: 't3.com',
-      check: 'http',
-      host: 'www.t3.com',
-      port: '80',
-      path: '/'
     },{
-      name: 'futureplc.com',
-      label: 'futureplc.com',
+      name: 'www.mobiles.co.uk/contract-phones.html', 
+      label: 'www.mobiles.co.uk/contract-phones.html',
       check: 'http',
-      host: 'www.futureplc.com',
+      host: 'www.www.mobiles.co.uk/contract-phones.html', 
       port: '80',
       path: '/'
-    },{
-      name: 'gizmodo.co.uk',
-      label: 'gizmodo.co.uk',
+    }, 
+   {
+      name: 'www.amazon.co.uk/gp/deals/', 
+      label: 'www.amazon.co.uk/gp/deals/',
       check: 'http',
-      host: 'www.gizmodo.co.uk',
+      host: 'www.www.amazon.co.uk/gp/deals/', 
       port: '80',
       path: '/'
-    },{
-      name: 'lifehacker.co.uk',
-      label: 'lifehacker.co.uk',
+    }, 
+   {
+      name: 'www.amazon.com/gp/goldbox/', 
+      label: 'www.amazon.com/gp/goldbox/',
       check: 'http',
-      host: 'www.lifehacker.co.uk',
+      host: 'www.www.amazon.com/gp/goldbox/', 
       port: '80',
       path: '/'
-    },{
-      name: 'kotaku.co.uk',
-      label: 'kotaku.co.uk',
+    }, 
+   {
+      name: 'www.amazon.ca/gp/goldbox', 
+      label: 'www.amazon.ca/gp/goldbox',
       check: 'http',
-      host: 'www.kotaku.co.uk',
+      host: 'www.www.amazon.ca/gp/goldbox', 
       port: '80',
       path: '/'
-    },{
-      name: 'digitalcameraworld.com',
-      label: 'digitalcameraworld.com',
+    }, 
+   {
+      name: 'www.amazon.de/gp/angebote', 
+      label: 'www.amazon.de/gp/angebote',
       check: 'http',
-      host: 'www.digitalcameraworld.com',
+      host: 'www.www.amazon.de/gp/angebote', 
       port: '80',
       path: '/'
-    }],
+    }, 
+   {
+      name: 'www.mobiles.co.uk', 
+      label: 'www.mobiles.co.uk',
+      check: 'http',
+      host: 'www.www.mobiles.co.uk', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.amazon.co.uk', 
+      label: 'www.amazon.co.uk',
+      check: 'http',
+      host: 'www.www.amazon.co.uk', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.amazon.com', 
+      label: 'www.amazon.com',
+      check: 'http',
+      host: 'www.www.amazon.com', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.amazon.ca', 
+      label: 'www.amazon.ca',
+      check: 'http',
+      host: 'www.www.amazon.ca', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.amazon.de', 
+      label: 'www.amazon.de',
+      check: 'http',
+      host: 'www.www.amazon.de', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.johnlewis.com/home-garden/bedroom/c6000074?rdr=1', 
+      label: 'www.johnlewis.com/home-garden/bedroom/c6000074?rdr=1',
+      check: 'http',
+      host: 'www.www.johnlewis.com/home-garden/bedroom/c6000074?rdr=1', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.carphonewarehouse.com/mobiles', 
+      label: 'www.carphonewarehouse.com/mobiles',
+      check: 'http',
+      host: 'www.www.carphonewarehouse.com/mobiles', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.mobilephonesdirect.co.uk/contract-deals', 
+      label: 'www.mobilephonesdirect.co.uk/contract-deals',
+      check: 'http',
+      host: 'www.www.mobilephonesdirect.co.uk/contract-deals', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.buymobiles.net/apple', 
+      label: 'www.buymobiles.net/apple',
+      check: 'http',
+      host: 'www.www.buymobiles.net/apple', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.tesco.com/direct/', 
+      label: 'www.tesco.com/direct/',
+      check: 'http',
+      host: 'www.www.tesco.com/direct/', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.currys.co.uk/gbuk/tv-and-home-entertainment-31-u.html', 
+      label: 'www.currys.co.uk/gbuk/tv-and-home-entertainment-31-u.html',
+      check: 'http',
+      host: 'www.www.currys.co.uk/gbuk/tv-and-home-entertainment-31-u.html', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.microsoftstore.com/store/msuk/en_GB/home', 
+      label: 'www.microsoftstore.com/store/msuk/en_GB/home',
+      check: 'http',
+      host: 'www.www.microsoftstore.com/store/msuk/en_GB/home', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.argos.co.uk/static/Home.htm', 
+      label: 'www.argos.co.uk/static/Home.htm',
+      check: 'http',
+      host: 'www.www.argos.co.uk/static/Home.htm', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.newegg.com/Computer-Systems/Store', 
+      label: 'www.newegg.com/Computer-Systems/Store',
+      check: 'http',
+      host: 'www.www.newegg.com/Computer-Systems/Store', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.simplygames.com/xbox-one/games', 
+      label: 'www.simplygames.com/xbox-one/games',
+      check: 'http',
+      host: 'www.www.simplygames.com/xbox-one/games', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.walmart.com/all-departments', 
+      label: 'www.walmart.com/all-departments',
+      check: 'http',
+      host: 'www.www.walmart.com/all-departments', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.zavvi.com/home.dept', 
+      label: 'www.zavvi.com/home.dept',
+      check: 'http',
+      host: 'www.www.zavvi.com/home.dept', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.wexphotographic.com/cameras/c2017', 
+      label: 'www.wexphotographic.com/cameras/c2017',
+      check: 'http',
+      host: 'www.www.wexphotographic.com/cameras/c2017', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.sainsburys.co.uk', 
+      label: 'www.sainsburys.co.uk',
+      check: 'http',
+      host: 'www.www.sainsburys.co.uk', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.game.co.uk/', 
+      label: 'www.game.co.uk/',
+      check: 'http',
+      host: 'www.www.game.co.uk/', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.jessops.com/cameras', 
+      label: 'www.jessops.com/cameras',
+      check: 'http',
+      host: 'www.www.jessops.com/cameras', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.pcworld.co.uk/gbuk/computing/laptops-703-c.html', 
+      label: 'www.pcworld.co.uk/gbuk/computing/laptops-703-c.html',
+      check: 'http',
+      host: 'www.www.pcworld.co.uk/gbuk/computing/laptops-703-c.html', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.apple.com/uk/ipad/', 
+      label: 'www.apple.com/uk/ipad/',
+      check: 'http',
+      host: 'www.www.apple.com/uk/ipad/', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.debenhams.com/women', 
+      label: 'www.debenhams.com/women',
+      check: 'http',
+      host: 'www.www.debenhams.com/women', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.hotukdeals.com/', 
+      label: 'www.hotukdeals.com/',
+      check: 'http',
+      host: 'www.www.hotukdeals.com/', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'store.goldenjoystick.com', 
+      label: 'store.goldenjoystick.com',
+      check: 'http',
+      host: 'www.store.goldenjoystick.com', 
+      port: '80',
+      path: '/'
+    }, 
+   {
+      name: 'www.smythstoys.com/uk/en-gb/', 
+      label: 'www.smythstoys.com/uk/en-gb/',
+      check: 'http',
+      host: 'www.www.smythstoys.com/uk/en-gb/', 
+      port: '80',
+      path: '/'
+    } ],
     serviceInterval: 6000,
     plugins : {
       external: {
